@@ -41,4 +41,4 @@ app.use('/assets/', express.static('assets'));
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: false}))
 
-app.listen(5000)
+var PORT = process.env.PORT || 5000
